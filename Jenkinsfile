@@ -7,7 +7,6 @@ pipeline {
             agent {
                 docker {
                     image 'python:3.12.0-alpine3.18'
-                    host 'tcp://127.0.0.1:2376'
                 }
             }
             steps {
