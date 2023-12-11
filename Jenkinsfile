@@ -8,7 +8,7 @@ pipeline {
                 docker {
                     image 'python:3.12.0-alpine3.18'
                     reuseNode true
-                    args '-v /var/run/docker.sock:/var/run/docker.sock'
+                    args '-v /run/containerd/containerd.sock:/run/containerd/containerd.sock'
                 }
             }
             steps {
